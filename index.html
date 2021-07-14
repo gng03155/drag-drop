@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/FileSaver.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main-body">
+            <div class="box-input">
+                <div class="init-style">
+                    <div class="img-icon"><img src="./img/gallery.png" alt="gallery-icon"></div>
+                    <h3>
+                        <label class="input-label" for="input-file">Choose a file</label>
+                        <span>or drag in drop</span>
+                    </h3>
+                </div>
+                <div class="loading">
+                    <h3>Loading</h3>
+                </div>
+                <canvas class=" canvas"></canvas>
+                <input type="file" id="input-file" class="input-file" accept="image/*" style="display: none;">
+            </div>
+            <div class="paint-tool">
+                <h2>Paint Tool</h2>
+                <div class="controls_colors" id="jsColors">
+                    <div class="controls_color jsColor" style="background-color:#2c2c2c"></div>
+                    <div class="controls_color jsColor" style="background-color:white"></div>
+                    <div class="controls_color jsColor" style="background-color:#FF3B30"></div>
+                    <div class="controls_color jsColor" style="background-color:#FF9500"></div>
+                    <div class="controls_color jsColor" style="background-color:#FFCC00"></div>
+                    <div class="controls_color jsColor" style="background-color:#4CD963"></div>
+                    <div class="controls_color jsColor" style="background-color:#5AC8FA"></div>
+                    <div class="controls_color jsColor" style="background-color:#0579FF"></div>
+                    <div class="controls_color jsColor" style="background-color:#5856D6"></div>
+                </div>
+                <div class="clear"><a>지우기</a></div>
+                <div class="draw-mode">
+                    <label for="input-file">새로 불러오기</label>
+                    <a href="#" class="img-down">이미지 저장</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
